@@ -37,7 +37,7 @@
     
 }
 /* width and hight fix */
-.navbar, .banner-container, .section-main{
+.navbar, .banner-container, .section-main, .section-stories{
     max-width: 1440px;
     margin: 0px auto;
     
@@ -145,12 +145,99 @@
     height: 50px;
     width: 50px;
 }
+/* our stories styles */
+.section-stories{
+    background-image: url(../assets/bg.png);
+    background: linear-gradient(to top, rgb(255, 211, 135), white, white);
+}
+.our-stories-title{
+    font-weight: 700;
+    font-size: 3rem;
+    justify-content: center;
+    text-align: center;
+    
+}
+.our-stories-1{
+    background-color: white;
+    border: 0px;
+    box-shadow: 2px 20px 30px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    margin: 0px;  
+}
+.our-title, .our-para, .os-btn{
+    padding-left: 30px;
+}
+.our-stories-2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin: 0px;
+    border: opx;
+    
+}
+.stories-div{
+    box-shadow: 2px 10px 30px 2px rgba(0, 0, 0, 0.05);
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    margin: 0px;
+    border: 0px;
+}
+.our-img{
+    gap: 20px;
+}
+.our-img img{
+    border-radius: 10px 10px 0 0;
+}
+/* all btn */
+.all-btn{
+    color: white;
+    font-size: 0.75rem;
+    border: none;
+    padding: 10px;
+    border-radius: 30px;
+    margin: 0;
+    margin-top: -150px;   
+}
+.btn-1{
+    background-color: rgba(60, 216, 232, 1);
+}
+.btn-2{
+    background-color: rgba(149, 178, 38, 1);
+}
+.btn-3{
+    background-color: rgba(93, 88, 240, 1);
+}
+.btn-4{
+    background-color: rgba(60, 216, 232, 1);
+}
+.btn-5{
+    background-color: rgba(149, 178, 38, 1);
+}
+
+
 /* mobile size */
 @media screen and (max-width:576px) {
     .banner-container{
         flex-direction: column-reverse;
     }
-    .brand-name, .Contact-btn, .nav-links{
+    .brand-name, .Contact-btn, .nav-item, .nav-links, .our-stories-1, .arrow-button{
         display: none;
+    }
+     .div-container{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    .banner-container{
+        justify-content: space-between;
+        text-align: center;
+        
+    }
+    .our-stories-2, .stories-div{
+        justify-items: center;
+        align-items: center;
+        text-align: center;
     }
 }
